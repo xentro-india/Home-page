@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xentro</title>
+<link rel="icon" type="image/png" href="assets/Metalog.png">
+  <link rel="stylesheet" href="join.css" />
+</head>
+<body>
+
+<main class="countdown-page">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <section class="countdown-shell">
+    <div class="brand-row">
+      <div class="brand"><a href="index.html">xentro</a></div>
+      <div class="status-pill">Launching Soon</div>
+    </div>
+
+    <div class="countdown-content">
+      <div class="eyebrow">26 September 2026 · 5:00 PM IST</div>
+
+      <h1>Something is about to begin.</h1>
+
+      <p class="lead">
+        The next chapter of Xentro goes live in:
+      </p>
+
+      <div class="timer" id="timer" aria-live="polite">
+        <div class="time-block">
+          <div class="time-value" id="days">00</div>
+          <div class="time-label">Days</div>
+        </div>
+
+        <div class="time-separator">:</div>
+
+        <div class="time-block">
+          <div class="time-value" id="hours">00</div>
+          <div class="time-label">Hours</div>
+        </div>
+
+        <div class="time-separator">:</div>
+
+        <div class="time-block">
+          <div class="time-value" id="minutes">00</div>
+          <div class="time-label">Minutes</div>
+        </div>
+
+        <div class="time-separator">:</div>
+
+        <div class="time-block">
+          <div class="time-value" id="seconds">00</div>
+          <div class="time-label">Seconds</div>
+        </div>
+      </div>
+
+      <div class="launch-note" id="launchNote">
+        <span>Build</span>
+        <span>Network</span>
+        <span>Navigate</span>
+      </div>
+
+      <div class="finished-state" id="finishedState">
+        <div class="finished-kicker">We’re live.</div>
+        <h2>The wait is over.</h2>
+        <p>Xentro is now open.</p>
+        <a href="index.html" class="launch-btn">Enter Xentro</a>
+      </div>
+    </div>
+
+    <div class="footer-line">
+      <span>Your North Star in the Entrepreneurial Journey.</span>
+      <span>26.09.2026 · 17:00 IST</span>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  // Target: 26 September 2026, 5:00 PM India Standard Time (UTC+05:30)
+  const target = new Date('2026-09-26T17:00:00+05:30').getTime();
+
+  const daysEl = document.getElementById('days');
+  const hoursEl = document.getElementById('hours');
+  const minutesEl = document.getElementById('minutes');
+  const secondsEl = document.getElementById('seconds');
+  const timerEl = document.getElementById('timer');
+  const noteEl = document.getElementById('launchNote');
+  const finishedEl = document.getElementById('finishedState');
+
+  function pad(value){
+    return String(value).padStart(2, '0');
+  }
+
+  function render(){
+    const now = Date.now();
+    const diff = target - now;
+
+    if(diff <= 0){
+      timerEl.style.display = 'none';
+      noteEl.style.display = 'none';
+      finishedEl.classList.add('show');
+      return;
+    }
+
+    const totalSeconds = Math.floor(diff / 1000);
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    daysEl.textContent = pad(days);
+    hoursEl.textContent = pad(hours);
+    minutesEl.textContent = pad(minutes);
+    secondsEl.textContent = pad(seconds);
+  }
+
+  render();
+  setInterval(render, 1000);
+})();
+</script>
+
+</body>
+</html>
