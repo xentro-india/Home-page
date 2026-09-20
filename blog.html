@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xentro</title>
+<link rel="icon" type="image/png" href="assets/Metalog.png">
+  <link rel="stylesheet" href="blogs.css" />
+</head>
+<body>
+
+<nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">xentro</a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="explore.html">Explore</a>
+      <a href="blog.html" class="active" aria-current="page">Blog</a>
+    </div>
+
+    <div class="nav-actions">
+      <a class="join-btn" href="join.html">Join Now</a>
+    </div>
+
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Xentro Journal</div>
+      <h1>Ideas that help founders move forward.</h1>
+      <p class="lead">Practical guidance, ecosystem intelligence, founder perspectives, and opportunities—designed to help entrepreneurs build, network, and navigate with greater clarity.</p>
+    </div>
+
+    <div class="hero-side">
+      <div class="side-label">Content Philosophy</div>
+      <div class="side-word">Build</div>
+      <div class="side-word">Network</div>
+      <div class="side-word">Navigate</div>
+    </div>
+  </div>
+</header>
+
+<nav class="blog-filter" aria-label="Blog categories">
+  <div class="wrap filter-inner">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="build">Build</button>
+    <button class="filter-btn" data-filter="navigate">Navigate</button>
+    <button class="filter-btn" data-filter="learn">Learn</button>
+    <button class="filter-btn" data-filter="discover">Discover</button>
+    <button class="filter-btn" data-filter="stories">Stories</button>
+    <button class="filter-btn" data-filter="rethink">Rethink</button>
+  </div>
+</nav>
+
+<main>
+
+<section class="featured">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Featured Insight</div>
+        <h2>Start with the question that matters most.</h2>
+      </div>
+      <p>What should a founder do next? Xentro’s editorial direction is built around helping entrepreneurs understand their stage, identify what matters now, and avoid unnecessary ecosystem friction.</p>
+    </div>
+
+    <article class="featured-card article-card" data-category="navigate">
+      <div class="featured-image"></div>
+      <div class="featured-copy">
+        <div class="article-meta">
+          <span>Navigate</span>
+          <span>Founder Guide</span>
+        </div>
+        <h3>What support does your startup actually need at its current stage?</h3>
+        <p>Mentor, incubator, accelerator, investor, grant, or peer network? The answer depends less on what exists and more on where your startup is today.</p>
+        <a href="#" class="read-link">Read article <span>→</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="latest">
+  <div class="wrap">
+    <div class="section-head compact">
+      <div>
+        <div class="eyebrow">Latest</div>
+        <h2>From the Xentro ecosystem.</h2>
+      </div>
+      <p>Editorial examples below can be replaced with your live CMS articles as the blog goes into production.</p>
+    </div>
+
+    <div class="article-grid" id="articleGrid">
+
+      <article class="article-card" data-category="build">
+        <div class="article-image img-build"></div>
+        <div class="article-body">
+          <div class="article-meta"><span>Build</span><span>Founders</span></div>
+          <h3>Your MVP is not supposed to prove everything.</h3>
+          <p>Use the MVP stage to learn what customers actually respond to before adding complexity.</p>
+          <a href="#" class="read-link">Read article <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="article-card" data-category="navigate">
+        <div class="article-image img-navigate"></div>
+        <div class="article-body">
+          <div class="article-meta"><span>Navigate</span><span>Ecosystem</span></div>
+          <h3>Incubator or accelerator: which one is relevant to you?</h3>
+          <p>Understand the difference before applying simply because a program is available.</p>
+          <a href="#" class="read-link">Read article <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="article-card" data-category="discover">
+        <div class="article-image img-discover"></div>
+        <div class="article-body">
+          <div class="article-meta"><span>Discover</span><span>Opportunities</span></div>
+          <h3>Stop applying to every startup grant you find.</h3>
+          <p>Eligibility, stage, geography, and timing matter more than the number of opportunities you discover.</p>
+          <a href="#" class="read-link">Read article <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="article-card" data-category="rethink">
+        <div class="article-image img-rethink"></div>
+        <div class="article-body">
+          <div class="article-meta"><span>Rethink</span><span>Perspective</span></div>
+          <h3>Hard does not automatically mean valuable.</h3>
+          <p>Building a company will always be difficult. Unnecessary ecosystem friction does not need to be part of the process.</p>
+          <a href="#" class="read-link">Read article <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="article-card" data-category="stories">
+        <div class="article-image img-stories"></div>
+        <div class="article-body">
+          <div class="article-meta"><span>Stories</span><span>Founder Journey</span></div>
+          <h3>What founders learn when they stop building in isolation.</h3>
+          <p>Real entrepreneurial journeys can show what changes when the right support enters at the right time.</p>
+          <a href="#" class="read-link">Read article <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="article-card" data-category="learn">
+        <div class="article-image img-learn"></div>
+        <div class="article-body">
+          <div class="article-meta"><span>Learn</span><span>Fundamentals</span></div>
+          <h3>What first-time founders should understand before approaching investors.</h3>
+          <p>Fundraising works better when founders first understand readiness, traction, and investor fit.</p>
+          <a href="#" class="read-link">Read article <span>→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="perspective">
+  <div class="wrap perspective-grid">
+    <div>
+      <div class="eyebrow">Xentro Perspective</div>
+      <h2>The ecosystem does not have an information shortage.</h2>
+    </div>
+    <div>
+      <p>It has a relevance problem.</p>
+      <p>Founders are surrounded by programs, people, content, funding sources, and opportunities. The difficult part is understanding what matters now.</p>
+      <a href="#" class="read-link light">Explore our perspective <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="editorial">
+  <div class="wrap">
+    <div class="section-head compact">
+      <div>
+        <div class="eyebrow">What We Write About</div>
+        <h2>Six pillars. One objective.</h2>
+      </div>
+      <p>Every piece of Xentro content should help someone understand the entrepreneurial journey better or move forward with greater clarity.</p>
+    </div>
+
+    <div class="pillar-grid">
+      <div class="pillar">
+        <span>01</span>
+        <strong>Build</strong>
+        <p>Validation, product, customers, business models, sales, teams, and execution.</p>
+      </div>
+      <div class="pillar">
+        <span>02</span>
+        <strong>Navigate</strong>
+        <p>Incubators, accelerators, investors, mentors, institutions, and startup stages.</p>
+      </div>
+      <div class="pillar">
+        <span>03</span>
+        <strong>Learn</strong>
+        <p>Finance, marketing, legal, leadership, technology, communication, and founder fundamentals.</p>
+      </div>
+      <div class="pillar">
+        <span>04</span>
+        <strong>Discover</strong>
+        <p>Grants, programs, startup credits, competitions, fellowships, and relevant opportunities.</p>
+      </div>
+      <div class="pillar">
+        <span>05</span>
+        <strong>Stories</strong>
+        <p>Founder journeys, ecosystem participants, mistakes, progress, and lessons from the field.</p>
+      </div>
+      <div class="pillar">
+        <span>06</span>
+        <strong>Rethink</strong>
+        <p>Ideas that challenge unnecessary friction, exclusivity, isolation, and outdated startup assumptions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="wrap newsletter-grid">
+    <div>
+      <div class="eyebrow">Xentro Brief</div>
+      <h2>Less noise. More relevance.</h2>
+      <p>Get selected founder insights, ecosystem perspectives, and opportunities in one concise update.</p>
+    </div>
+
+    
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">xentro</div>
+    <div class="footer-copy">Build with clarity. Connect with purpose. Navigate with confidence.</div>
+    <a href="join.html" class="primary">Join Xentro</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const nav = document.getElementById('siteNav');
+  const toggle = document.getElementById('mobileToggle');
+  const filters = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('#articleGrid .article-card');
+  let lastY = window.scrollY;
+  let ticking = false;
+
+  function updateNav(){
+    const currentY = window.scrollY;
+
+    if(!nav.classList.contains('mobile-open')){
+      if(currentY > lastY && currentY > 90){
+        nav.classList.add('nav-hidden');
+      }else if(currentY < lastY){
+        nav.classList.remove('nav-hidden');
+      }else if(currentY <= 90){
+        nav.classList.remove('nav-hidden');
+      }
+    }
+
+    nav.classList.toggle('nav-solid', currentY > 24);
+    lastY = currentY;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', ()=>{
+    if(!ticking){
+      requestAnimationFrame(updateNav);
+      ticking = true;
+    }
+  }, {passive:true});
+
+  toggle.addEventListener('click', ()=>{
+    const open = nav.classList.toggle('mobile-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    nav.classList.remove('nav-hidden');
+  });
+
+  filters.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const filter = btn.dataset.filter;
+
+      filters.forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+
+      cards.forEach(card=>{
+        const show = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
