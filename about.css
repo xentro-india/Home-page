@@ -762,7 +762,7 @@ background-image: url(assets/krnt.png);
   color:#8a9099;
   margin-bottom:13px;
 }
-.leader-info2 h3{
+.leader-info3 h3{
   font-size:clamp(24px,2.2vw,32px);
   line-height:1.07;
   letter-spacing:-.03em;
