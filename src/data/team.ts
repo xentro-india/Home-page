@@ -16,7 +16,7 @@ export const teamMembers: TeamMember[] = [
     badge: 'CEO',
     bio: 'Founder of Xentro and the driving force behind its vision of building connected entrepreneurial infrastructure for founders and ecosystem participants.',
     image: '/assets/krnt.png',
-    aspectRatio: '4/5',
+    aspectRatio: '3/5',
   },
   {
     id: 'swaroop-mahadev',
